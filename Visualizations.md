@@ -10,8 +10,8 @@ Shows percentage of unsheltered and sheltered homeless individuals for year sele
 ### **Yearly Count Line Graph**   
 Shows the count of unsheltered and sheltered homeless individuals for year selected and either for all states or for those selected in the State Stacked Bar Chart.
 
-### **Percent Change Side-By-Side Bar Chart**   
-Shows year over year percentage change of homelessness for all states or for those selected in the State Stacked Bar Chart.
+### **Percent Change of Homelessness % Side-By-Side Bar Chart**   
+Shows year over year percentage change of the percent of homelessness for all states or for those selected in the State Stacked Bar Chart. Bars represent unsheltered, sheltered, and the total of homeless individuals.
 
 ### **State Stacked Bar Chart**   
 Shows stacked ratio of sheltered and unsheltered homeless individuals for each state based on the year selected. 
