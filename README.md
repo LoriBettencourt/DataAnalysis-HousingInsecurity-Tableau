@@ -3,7 +3,7 @@
 # The accompanying [dashboard](https://public.tableau.com/app/profile/lori.bettencourt/viz/HousingInsecurity_16649964396730/Dashboard1) can be found at my [Tableau Public](https://public.tableau.com/app/profile/lori.bettencourt) projects site.
 
 ## Data Preparation
-Data preparation documentation to date can be found in [DataTransformationAndCleaning.md](/data/DataTransformationAndCleaning.md)
+Data preparation documentation to date can be found in [DataTransformationAndCleaning.md](/Data/DataTransformationAndCleaning.md)
 
 ## Resources
 [Kaggle](https://www.kaggle.com/)
