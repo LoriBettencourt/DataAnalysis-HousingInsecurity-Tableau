@@ -1,10 +1,24 @@
 WORKING ON THESE NOW. 10/14/2022
 
-The following queries were ran to compare against dashbaord results.
+Theses are some of the queries ran to compare against dashbaord results.
 
 #########################
 # VALUE (%)
 #########################
+* Sheletered for all states in 2014
+SELECT ((homeless.sum_s_homeless/pop.sum_pop)*100)
+FROM (
+  SELECT SUM(Sheltered_Homeless) AS sum_s_homeless
+  FROM `green-link-358414.housing_insecurity.homeless`
+  WHERE Year=2014) homeless
+JOIN (
+  SELECT SUM(Population) as sum_pop
+  FROM `green-link-358414.housing_insecurity.pop`
+  where Year = 2014) pop
+On 1=1
+0.1254
+
+* Total homeless for CA in 2010
 SELECT (sum_homeless/Population)*100
 FROM (
   SELECT Year, State, SUM(Total_Homeless) AS sum_homeless
@@ -17,8 +31,34 @@ ON (homeless.Year = pop.Year
 AND homeless.State = pop.State)
 0.3307
 
+* Unsheltered in GA in 2013
+SELECT (sum_u_homeless/Population)*100
+FROM (
+  SELECT Year, State, SUM(Unsheltered_Homeless) AS sum_u_homeless
+  FROM `green-link-358414.housing_insecurity.homeless`
+  WHERE Year=2013
+  AND State='GA'
+  GROUP BY 1, 2) homeless
+JOIN `green-link-358414.housing_insecurity.pop` as pop
+ON (homeless.Year = pop.Year
+AND homeless.State = pop.State)
+0.0847
+
+* Sheleted in CT in 2016
+SELECT (sum_s_homeless/Population)*100
+FROM (
+  SELECT Year, State, SUM(Sheltered_Homeless) AS sum_s_homeless
+  FROM `green-link-358414.housing_insecurity.homeless`
+  WHERE Year=2016
+  AND State='CT'
+  GROUP BY 1, 2) homeless
+JOIN `green-link-358414.housing_insecurity.pop` as pop
+ON (homeless.Year = pop.Year
+AND homeless.State = pop.State)
+0.09029
+
 #########################
-# COUNT
+# COUNT & STATES
 #########################
 SELECT SUM(Unsheltered_Homeless) 
 FROM `green-link-358414.housing_insecurity.homeless` 
@@ -35,7 +75,15 @@ FROM `green-link-358414.housing_insecurity.homeless`
 WHERE Year=2012
 388516
 
+* Sheleted, Unsheltered, Total Homeless in AZ in 2015
+SELECT SUM(Sheltered_Homeless), SUM(Unsheltered_Homeless), SUM(Total_Homeless)
+FROM `green-link-358414.housing_insecurity.homeless`
+WHERE Year=2015
+AND State='AZ'
+6939, 2957, 9896
 
-#########################
-# STATES
-#########################
+SELECT SUM(Sheltered_Homeless), SUM(Unsheltered_Homeless), SUM(Total_Homeless)
+FROM `green-link-358414.housing_insecurity.homeless`
+WHERE Year=2014
+AND State='PA'
+14301, 1032, 15333
