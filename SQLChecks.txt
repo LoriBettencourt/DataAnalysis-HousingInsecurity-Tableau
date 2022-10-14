@@ -1,0 +1,41 @@
+WORKING ON THESE NOW. 10/14/2022
+
+The following queries were ran to compare against dashbaord results.
+
+#########################
+# VALUE (%)
+#########################
+SELECT (sum_homeless/Population)*100
+FROM (
+  SELECT Year, State, SUM(Total_Homeless) AS sum_homeless
+  FROM `green-link-358414.housing_insecurity.homeless`
+  WHERE Year=2010
+  AND State='CA'
+  GROUP BY 1, 2) homeless
+JOIN `green-link-358414.housing_insecurity.pop` as pop
+ON (homeless.Year = pop.Year
+AND homeless.State = pop.State)
+0.3307
+
+#########################
+# COUNT
+#########################
+SELECT SUM(Unsheltered_Homeless) 
+FROM `green-link-358414.housing_insecurity.homeless` 
+WHERE Year=2010
+228941
+
+SELECT SUM(Total_Homeless) 
+FROM `green-link-358414.housing_insecurity.homeless` 
+WHERE Year=2011
+618611
+
+SELECT SUM(Sheltered_Homeless) 
+FROM `green-link-358414.housing_insecurity.homeless` 
+WHERE Year=2012
+388516
+
+
+#########################
+# STATES
+#########################
