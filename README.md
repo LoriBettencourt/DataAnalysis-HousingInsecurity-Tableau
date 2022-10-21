@@ -15,7 +15,17 @@ Many people in the U.S. are barely scraping by to purchase food and pay their re
 
 So, as I am still interested in the issues surrounding housing insecurity, I decided to continue my research with this case study.
 
+## Definitions
+According to ["A Guide to Counting Unsheltered Homeless People"](https://www.hudexchange.info/sites/onecpd/assets/File/Guide-for-Counting-Unsheltered-Homeless-Persons.pdf) by the U.S. Department of Housing and Urban Development or [HUD](https://www.hud.gov/), the following definitions apply to the populations in this study.
 
+An unsheltered homeless person resides:  
+• In a place not meant for human habitation, such as cars, parks, sidewalks, abandoned
+buildings (on the street). 
+
+A sheltered homeless person resides:  
+• In an emergency shelter.  
+• In transitional housing or supportive housing for homeless persons who originally came from the streets or emergency shelters.  
+ 
 ## Analysis Task
 Let's look specifically at housing insecurity trends from 2010 until 2016: 
 1. Which 2 years had the highest and lowest homelessness percentages of the U.S. Population?
@@ -61,6 +71,8 @@ Queries against the dashboard reports can be reviewed at [SQLChecks.txt](/SQLChe
 
 ## Resources
 [According to Need Podcast](https://99percentinvisible.org/need/)  
+["A Guide to Counting Unsheltered Homeless People"](https://www.hudexchange.info/sites/onecpd/assets/File/Guide-for-Counting-Unsheltered-Homeless-Persons.pdf)  
+[HUD](https://www.hud.gov/)  
 [Kaggle](https://www.kaggle.com/)
 [2007-2016-Homelessness-USA.csv](https://www.kaggle.com/datasets/adamschroeder/homelessness?select=2007-2016-Homelessnewss-USA.csv)  
 [Population-by-state.csv](https://www.kaggle.com/datasets/adamschroeder/homelessness?select=Population-by-state.csv)   

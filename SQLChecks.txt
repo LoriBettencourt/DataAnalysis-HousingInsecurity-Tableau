@@ -1,6 +1,6 @@
 WORKING ON THESE NOW. 10/14/2022
 
-Theses are some of the queries ran to compare against dashbaord results.
+Here are some of the queries ran to compare against dashbaord results.
 
 #########################
 # VALUE (%)
