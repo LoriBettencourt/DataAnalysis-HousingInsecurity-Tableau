@@ -63,7 +63,7 @@ Florida had more unsheltered until 2015, when the sheltered homeless population 
 ## Data Preparation
 Data preparation documentation to date can be found in [DataTransformationAndCleaning.md](/Data/DataTransformationAndCleaning.md)
 
-## Sales Dashboard Visualizations
+## Dashboard Visualizations
 Explainations of visualizations can be reviewed at [Visualizations.md](/Visualizations.md)
 
 ## SQL Checks  
